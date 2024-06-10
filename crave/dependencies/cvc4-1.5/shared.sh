@@ -12,7 +12,7 @@ fi
 package=cvc4
 source="$package-$version.tar.gz"
 build_dir=$build/$package-$version
-url="http://cvc4.cs.stanford.edu/downloads/builds/src/$source"
+url="https://uvm.io/$source"
 
 if [ -z "$BOOST_ROOT" ]; then
   dependencies="$DEPS_BOOST"
