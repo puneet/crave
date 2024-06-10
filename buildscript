@@ -48,7 +48,7 @@ install_dependencies () {
       then
 	  echo "Installing CRAVE."
 	  export GLOG_ROOT=/do/not/use
-	  export CRAVE_SOLVERS='cudd z3'
+	  export CRAVE_SOLVERS='cudd z3 boolector cvc4 stp SWORD yices minisat lingeling'
 	  echo "Build CRAVE using $NUM_THREADS thread(s)"
 	  make -j $NUM_THREADS
 	  make install -j $NUM_THREADS     

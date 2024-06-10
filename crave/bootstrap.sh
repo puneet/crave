@@ -10,7 +10,7 @@ GLOG=glog-git-0.3.3
 SYSTEMC=systemc-2.3.1
 
 BOOLECTOR=boolector-2.2.0
-CVC4=cvc4-unstable
+CVC4=cvc4-1.6
 STP=stp-git-basic
 SWORD=SWORD-1.1
 YICES2=yices-2.5.1
@@ -90,7 +90,7 @@ if [[ "$CLEAN" ]]; then
   rm -rf $BUILD_DIR
 fi
 
-BACKENDS="${BACKENDS:-z3 cudd}"
+BACKENDS="${BACKENDS:-z3 cudd boolector cvc4 stp SWORD yices minisat lingeling}"
 echo "activated backends are: $BACKENDS"
 
 if [[ "$CRAVE_OFFLINE_BUILD" = "ON" ]]; then
